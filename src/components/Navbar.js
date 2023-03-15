@@ -1,30 +1,36 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import mic from '../assets/img/mic.png';
+import setting from '../assets/img/setting.png';
+import back from '../assets/img/back.png';
 
 const Navbar = () => {
-  const router = useLocation();
-  const links = [
-    {
-      text: 'Home',
-      link: '/home',
-    },
-    {
-      text: 'Detail',
-      link: '/detail',
-    },
-  ];
+  const navigate = useNavigate();
 
   return (
-    <nav className="navbar">
-      <ul>
-        {
-          links.map((link) => (
-            <li key={link.text} className={`nav-link ${router.pathname === link.link ? 'active' : 'inactive'}`}>
-              <NavLink to={link.link} className="link">{link.text}</NavLink>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
+    <div className="navigation">
+
+      <div key={uuidv4()} onClick={() => navigate('/')} aria-hidden="true">
+        <img
+          className="btn"
+          src={back}
+          alt="back"
+        />
+      </div>
+      <span> 2023 Digiwalls Media </span>
+
+      <h2 className="heading"> Gamer Power </h2>
+      <div
+        key={uuidv4()}
+        onClick={() => navigate('/')}
+        className="position"
+        aria-hidden="true"
+      >
+        <img className="btn" src={mic} alt="mic" />
+        <img className="btn" src={setting} alt="setting" />
+      </div>
+    </div>
   );
 };
 

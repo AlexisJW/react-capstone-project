@@ -5,6 +5,7 @@ import {
 // import store and provider
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import './sass/index.scss';
 import Layout from './components/Layout';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
