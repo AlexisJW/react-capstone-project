@@ -18,7 +18,7 @@ const Navbar = () => {
           alt="back"
         />
       </div>
-      <span> 2023 Digiwalls Media </span>
+      <span> 2023 </span>
 
       <h2 className="heading"> Gamer Power </h2>
       <div
