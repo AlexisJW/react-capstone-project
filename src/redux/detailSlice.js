@@ -30,20 +30,29 @@ const gameDetailSlice = createSlice({
     builder
       .addCase(getGameDetailFromApi.pending, (state) => ({ ...state, isLoading: true }))
       .addCase(getGameDetailFromApi.fulfilled, (state, { payload }) => {
-        state.gameDetail = {
-          id: payload.id,
-          title: payload.title,
-          thumbnail: payload.thumbnail,
-          image: payload.image,
-          description: payload.description,
-          instructions: payload.instructions,
-          open_giveaway_url: payload.open_giveaway_url,
-          published_date: payload.published_date,
-          users: payload.users,
-          status: payload.status,
+        const {
+          id, title, type, image, description, platforms, worth, users, status, instructions,
+        } = payload;
+
+        const gameDetail = {
+          id,
+          title,
+          type,
+          image,
+          description,
+          platforms,
+          worth,
+          users,
+          status,
+          instructions,
         };
-        state.isLoading = false;
-      })      
+
+        return {
+          ...state,
+          gameDetail,
+          isLoading: false,
+        };
+      })
       .addCase(getGameDetailFromApi.rejected, (state) => ({ ...state, isLoading: false }));
   },
 });

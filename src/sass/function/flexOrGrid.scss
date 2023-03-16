@@ -1,0 +1,7 @@
+@mixin flexOrGrid($display: flex, $flexdirection: row, $flexgap: auto, $flexalign: stretch, $flexjustify: stretch) {
+    display: $display;
+    flex-direction: $flexdirection;
+    gap: $flexgap;
+    align-items: $flexalign;
+    justify-content: $flexjustify;
+}

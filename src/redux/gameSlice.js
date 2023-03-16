@@ -33,14 +33,7 @@ const gamesSlice = createSlice({
         const games = Object.entries(payload).map(([gameId, gameItems]) => ({
           id: gameId,
           title: gameItems.title,
-          thumbnail: gameItems.thumbnail,
           image: gameItems.image,
-          description: gameItems.description,
-          instructions: gameItems.instructions,
-          open_giveaway_url: gameItems.open_giveaway_url,
-          published_date: gameItems.published_date,
-          users: gameItems.users,
-          status: gameItems.status,
         }));
 
         return { ...state, isLoading: false, games };

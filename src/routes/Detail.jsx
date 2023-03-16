@@ -5,62 +5,47 @@ import { getGameDetailFromApi } from '../redux/detailSlice';
 
 const Detail = () => {
   const gameDetails = useSelector((state) => state.gameDetail.gameDetail);
-  console.log(gameDetails);
   const dispatch = useDispatch();
   const { id } = useParams();
 
   useEffect(() => {
     dispatch(getGameDetailFromApi(id));
-    console.log('**** ' + gameDetails);
   }, [dispatch, id]);
 
   return (
-    <div className="parent" data-testid="detailspage">
+    <div className="detail-container" data-testid="detailspage">
       <div className="items">
         <img className="image" src={gameDetails.image} alt="game" />
-        <p>
-          (
-          {gameDetails.title}
-          )
-        </p>
         <h1>{gameDetails.title}</h1>
         <table className="table">
           <tbody>
             <tr>
-              <th scope="col">cik (Company Identification Number)</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Description </th>
+              <td>{gameDetails.description}</td>
             </tr>
             <tr>
-              <th scope="col">Sector</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Instructions </th>
+              <td>{gameDetails.instructions}</td>
             </tr>
             <tr>
-              <th scope="col">Price</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Platforms </th>
+              <td>{gameDetails.platforms}</td>
             </tr>
             <tr>
-              <th scope="col">Currency</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Worth </th>
+              <td>{gameDetails.worth}</td>
             </tr>
             <tr>
-              <th scope="col">Full Time Employees</th>
+              <th scope="col"> Users </th>
               <td>{gameDetails.users}</td>
             </tr>
             <tr>
-              <th scope="col">Country</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Status </th>
+              <td>{gameDetails.status}</td>
             </tr>
             <tr>
-              <th scope="col">City</th>
-              <td>{gameDetails.id}</td>
-            </tr>
-            <tr>
-              <th scope="col">Phone</th>
-              <td>{gameDetails.id}</td>
-            </tr>
-            <tr>
-              <th scope="col">CEO (Chief Executive Officer)</th>
-              <td>{gameDetails.id}</td>
+              <th scope="col"> Type </th>
+              <td>{gameDetails.type}</td>
             </tr>
           </tbody>
 

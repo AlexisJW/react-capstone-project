@@ -18,7 +18,7 @@ const Home = () => {
   }, [games, dispatch]);
 
   return (
-    <div className="context">
+    <div className="home-container">
       <div className="search">
         <input
           className="input"
@@ -34,9 +34,7 @@ const Home = () => {
           .filter((game) => {
             if (search === '') {
               return game;
-            } if (
-              game.title.toLowerCase().includes(search.toLowerCase())
-            ) {
+            } if (game.title.toLowerCase().includes(search.toLowerCase())) {
               return game;
             }
             return null;
@@ -48,7 +46,7 @@ const Home = () => {
               onClick={() => navigate(`/detail/${game.id}`)}
               aria-hidden="true"
             >
-              <HomeItem title={game.title} />
+              <HomeItem title={game.title} image={game.image} />
             </div>
           ))}
       </div>
