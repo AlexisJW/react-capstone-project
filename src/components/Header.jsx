@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 
 const Header = () => (
-  <header className="header">
+  <header className="header" data-testid="header">
     <div className="logo-header">
       <div className="logo" />
     </div>

@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="navigation">
+    <div className="navigation" data-testid="navbar">
 
       <div key={uuidv4()} onClick={() => navigate('/')} aria-hidden="true">
         <img
