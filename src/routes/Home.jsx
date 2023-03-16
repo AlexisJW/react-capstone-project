@@ -45,7 +45,7 @@ const Home = () => {
             <div
               className="repeated-card"
               key={uuidv4()}
-              onClick={() => navigate(`/details/${game.symbol}`)}
+              onClick={() => navigate(`/detail/${game.id}`)}
               aria-hidden="true"
             >
               <HomeItem title={game.title} />
