@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import HomeItem from '../components/HomeItem';
-import PropTypes from 'prop-types';
 
 describe('HomeItem component', () => {
   const props = {
@@ -9,23 +8,18 @@ describe('HomeItem component', () => {
     image: 'test.jpg',
   };
 
-  HomeItem.propTypes = {
-    title: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-  };
-
   it('renders correctly', () => {
-    const { getByTestId } = render(<HomeItem {...props} />);
+    const { getByTestId } = render(<HomeItem title={props.title} image={props.image} />);
     expect(getByTestId('homeitem')).toBeInTheDocument();
   });
 
   it('displays the correct title', () => {
-    const { getByText } = render(<HomeItem {...props} />);
+    const { getByText } = render(<HomeItem title={props.title} image={props.image} />);
     expect(getByText(props.title)).toBeInTheDocument();
   });
 
   it('displays the correct image', () => {
-    const { getByAltText } = render(<HomeItem {...props} />);
+    const { getByAltText } = render(<HomeItem title={props.title} image={props.image} />);
     expect(getByAltText('game')).toHaveAttribute('src', props.image);
   });
 });

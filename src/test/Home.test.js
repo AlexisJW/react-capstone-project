@@ -3,17 +3,18 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import Home from '../routes/Home';
-import configureStore from '../redux/configureStore';
+import store from '../redux/store';
 
+const configureStore = store;
 const renderWithProviders = (ui, { initialState, store = configureStore(initialState) } = {}) => ({
   ...render(
     <Provider store={store}>
       <MemoryRouter>
         {ui}
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   ),
-  store
+  store,
 });
 
 describe('Home component', () => {
@@ -30,8 +31,8 @@ describe('Home component', () => {
           { id: 1, title: 'Game 1', image: 'game1.jpg' },
           { id: 2, title: 'Game 2', image: 'game2.jpg' },
           { id: 3, title: 'Game 3', image: 'game3.jpg' },
-        ]
-      }
+        ],
+      },
     };
     renderWithProviders(<Home />, { initialState });
     const gameTitles = screen.getAllByRole('heading', { level: 1 });
@@ -47,8 +48,8 @@ describe('Home component', () => {
           { id: 1, title: 'Game 1', image: 'game1.jpg' },
           { id: 2, title: 'Game 2', image: 'game2.jpg' },
           { id: 3, title: 'Game 3', image: 'game3.jpg' },
-        ]
-      }
+        ],
+      },
     };
     renderWithProviders(<Home />, { initialState });
     const searchInput = screen.getByPlaceholderText(/search game/i);
@@ -63,8 +64,8 @@ describe('Home component', () => {
       games: {
         games: [
           { id: 1, title: 'Game 1', image: 'game1.jpg' },
-        ]
-      }
+        ],
+      },
     };
     const navigate = jest.fn();
     renderWithProviders(<Home />, { initialState });

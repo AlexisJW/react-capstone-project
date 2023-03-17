@@ -8,7 +8,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     const navbarElement = screen.getByTestId('navbar');
     expect(navbarElement).toBeInTheDocument();
@@ -18,7 +18,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     const backButton = screen.getByAltText('back');
     expect(backButton).toBeInTheDocument();
@@ -28,7 +28,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     const micButton = screen.getByAltText('mic');
     expect(micButton).toBeInTheDocument();
@@ -38,7 +38,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     const settingsButton = screen.getByAltText('setting');
     expect(settingsButton).toBeInTheDocument();
@@ -48,7 +48,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     const currentYear = new Date().getFullYear();
     const yearElement = screen.getByText(currentYear);
