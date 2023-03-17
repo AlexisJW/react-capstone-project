@@ -13,12 +13,12 @@ describe('HomeItem component', () => {
     expect(getByTestId('homeitem')).toBeInTheDocument();
   });
 
-  it('displays the correct title', () => {
+  it('Displays the correct title', () => {
     const { getByText } = render(<HomeItem title={props.title} image={props.image} />);
     expect(getByText(props.title)).toBeInTheDocument();
   });
 
-  it('displays the correct image', () => {
+  it('Displays the correct image', () => {
     const { getByAltText } = render(<HomeItem title={props.title} image={props.image} />);
     expect(getByAltText('game')).toHaveAttribute('src', props.image);
   });
