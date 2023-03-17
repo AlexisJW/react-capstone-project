@@ -1,4 +1,4 @@
-## Copyright 2021, [Simplegoose, AlexisJW]
+## Copyright 2023, Jean Walner ALEXIS
 
 ###### Please delete this line and the next one
 ###### Web App can be a webpage/website, a web app, a software and so on
