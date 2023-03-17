@@ -1,52 +1,56 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h3><b>Space Travellers' Hub</b></h3>
-
+  <h3><b>GamerPower Application</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Space Travellers' Hub\] ](#-space-travellers-hub-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Travellers' Hub] <a name="about-project"></a>
+# 📖 [GamerPower] <a name="about-project"></a>
 
-**[Space Travellers' Hub]** is a web application for space enthusiasts created with React.
+**[GamerPower application]** is the ultimate tool for gamers! With GamerPower, you can easily find, track, and collect the best giveaways in gaming. Whether you're looking for free games, beta keys, free in-game loot, or currency for your favorite games, you won't miss out on a single freebie with GamerPower by your side!
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
+
 
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
+</details>
+
+<details>
+  <summary>Database</summary>
   <ul>
-    <li><a>CSS</a></li>
+    <li><a href="https://www.gamerpower.com/api/giveaways">Open GamePower API</a></li>
   </ul>
 </details>
 
@@ -54,9 +58,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Uso of React Hooks]**
-- **[Use of SpaceX API]**
-- **[Uso of Redux Toolkit to manage application state]**
+- **[Global state using Redux]**
+- **[API driven application]**
+- **[Single Page Application]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +68,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon.
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://gamepower.onrender.com/home)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,19 +90,23 @@ Install Node.JS
 
 Clone this repository to your desired folder:
 
+Example commands:
+
 ```sh
   cd my-folder
-  git clone https://github.com/AlexisJW/react-group-project.git
+  git clone https://github.com/AlexisJW/react-capstone-project.git
 ```
+
 ### Install
+
+Install this project with:
 
 Install dependencies of this project with:
 
 ```sh
-  cd react-group-project
+  cd react-capstone-project
   npm install
 ```
--
 
 ### Usage
 
@@ -114,11 +124,10 @@ To run tests, run the following command:
 ```sh
   npm test
 ```
--
 
 ### Deployment
 
-Coming Soon!
+> - [Deployment](https://gamepower.onrender.com/home)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,14 +135,10 @@ Coming Soon!
 
 ## 👥 Authors <a name="authors"></a>
 
-
-👤 **Simplegoose**
-
-- GitHub: [@simplegoose](https://github.com/simplegoose)
-
-👤 **AlexisJW**
+👤 **Jean Walner ALEXIS**
 
 - GitHub: [@AlexisJW](https://github.com/AlexisJW)
+- Linkedin: [@jean-walner-alexis](https://www.linkedin.com/in/jean-walner-alexis/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,7 +146,7 @@ Coming Soon!
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[API integration]**
+- [ ] **[Persistent storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +172,7 @@ If you like this project leave a star on this repo.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse.
+I would like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
