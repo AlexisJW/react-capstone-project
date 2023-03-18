@@ -125,7 +125,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-> - [Deployment](https://gamepower.onrender.com/home)
+> - [Deployment](https://gamepower.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
