@@ -68,7 +68,7 @@
 
 ## 🚀 Demonstration Video <a name="live-demo"></a>
 
-- [Demonstration Video](https://www.loom.com/share/0ce4f760e4c446c9b89603bbb8851f31)
+- [Demonstration Video](https://www.loom.com/share/905462c481c84d3ab50b1f13da56fd94)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
